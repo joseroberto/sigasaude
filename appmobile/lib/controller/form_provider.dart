@@ -36,6 +36,7 @@ class FormProvider extends ChangeNotifier {
 
   // void reset() {
   //   _isAllChecked = false;
+  //   _changed = false;
   //
   //   notifyListeners();
   // }

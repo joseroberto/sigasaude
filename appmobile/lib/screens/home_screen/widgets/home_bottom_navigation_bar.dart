@@ -59,7 +59,7 @@ class HomeBottomNavigationBarState extends State<HomeBottomNavigationBar> {
                 Navigator.pushNamed(context, 'agendar_consulta');
                 setState(() {selectedIndex = 0;});
               }else if(selectedIndex == 3) {
-                Navigator.pushNamed(context, 'locations');
+                Navigator.pushNamed(context, 'emergency');
                 setState(() {selectedIndex = 0;});
               }
             },

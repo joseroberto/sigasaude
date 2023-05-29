@@ -54,7 +54,7 @@ class ProfileScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 24.0),
                   child: _ListItem(function: (() {}), icon: Icons.person, title: 'Meu cadastro'),
                 ),
-                _ListItem(function: (() {}), icon: Icons.notifications_none_rounded, title: 'Minhas notificações'),
+                _ListItem(function: (() {Navigator.pushNamed(context, 'notifications');}), icon: Icons.notifications_none_rounded, title: 'Minhas notificações'),
                 _ListItem(function: (() {Navigator.pushNamed(context, 'appointments');}), icon: MaterialCommunityIcons.calendar_heart, title: 'Minhas consultas'),
                 _ListItem(function: (() {Navigator.pushNamed(context, 'vaccines');}), icon: MaterialCommunityIcons.needle, title: 'Minhas vacinas'),
                 _ListItem(function: (() {Navigator.pushNamed(context, 'prescriptions');}), icon: MaterialCommunityIcons.notebook_check, title: 'Minhas prescrições médicas'),
@@ -62,7 +62,7 @@ class ProfileScreen extends StatelessWidget {
                 const Divider(),
                 Padding(
                   padding: const EdgeInsets.only(top: 16.0),
-                  child: _ListItem(function: (() {}), icon: Icons.question_mark, title: 'Dúvidas frequentes'),
+                  child: _ListItem(function: (() {Navigator.pushNamed(context, 'faq');}), icon: Icons.question_mark, title: 'Dúvidas frequentes'),
                 ),
                 _ListItem(function: (() {}), icon: MaterialCommunityIcons.text_box_outline, title: 'Termos e condições'),
                 _ListItem(function: (() {}), icon: MaterialCommunityIcons.comment_question_outline , title: 'Fale conosco'),

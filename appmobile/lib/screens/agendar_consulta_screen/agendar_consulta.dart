@@ -179,9 +179,7 @@ class _AgendarConsultaState extends State<AgendarConsulta> {
                               "title": "marked"
                             }
                         );
-                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                          return ConsultaConfirmadaScreen(day: day, month: monthName, time: time,);
-                        }));
+                        Navigator.pushNamed(context, 'forms', arguments: {"day": day, "month": monthName, "time": time});
                       }else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(duration: Duration(milliseconds: 1000), content: Text('Por favor, selecione um horário!')),

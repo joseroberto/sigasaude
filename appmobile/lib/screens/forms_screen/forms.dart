@@ -15,9 +15,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../main.dart';
+import '../agendar_consulta_screen/widgets/consulta_confirmada.dart';
 
 class FormsScreen extends StatefulWidget {
-  const FormsScreen({Key? key}) : super(key: key);
+  final String day;
+  final String month;
+  final String time;
+  const FormsScreen({Key? key, required this.day, required this.month, required this.time}) : super(key: key);
 
   @override
   State<FormsScreen> createState() => _FormsScreenState();
@@ -102,7 +106,9 @@ class _FormsScreenState extends State<FormsScreen> {
                           duration: const Duration(milliseconds: 500),
                           curve: Curves.easeIn);
                     }else {
-                      Navigator.pushReplacementNamed(context, 'agendar_consulta');
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                        return ConsultaConfirmadaScreen(day: widget.day, month: widget.month, time: widget.time,);
+                      }));
                     }
                   }
                 },

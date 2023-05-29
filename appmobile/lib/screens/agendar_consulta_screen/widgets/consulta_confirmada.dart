@@ -17,11 +17,11 @@ class ConsultaConfirmadaScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         elevation: 0,
         scrolledUnderElevation: 0,
-        leading: AppColors.backButton,
+        leading: AppColors().backButtonWithAction(() => Navigator.pushReplacementNamed(context, 'appointments')),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 8.0),
-            child: AppColors.closeButton,
+            child: AppColors().closeButtonWithAction(() => Navigator.pushReplacementNamed(context, 'appointments')),
           )
         ],
       ),

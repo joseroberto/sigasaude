@@ -1,6 +1,5 @@
 import 'package:covid_data_app/controller/form_singleton.dart';
 import 'package:flutter/material.dart';
-
 import '../../../themes/app_colors.dart';
 
 List<bool> _checkBoxValues = [false, false, false];
@@ -16,6 +15,7 @@ class _Question1State extends State<Question1> {
 
   @override
   void initState() {
+    //_checkBoxValues = [false, false, false];
     FormSingleton().formProvider.validateForm([true]);
     super.initState();
   }

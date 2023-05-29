@@ -48,52 +48,57 @@ class _Title extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text.rich(
-          TextSpan(
+    return InkWell(
+      onTap: (() {
+        Navigator.pushNamed(context, 'locations');
+      }),
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text.rich(
+            TextSpan(
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 12,
+                color: Color(0xff000000),
+                letterSpacing: 0.108,
+                height: 2,
+              ),
+              children: [
+                TextSpan(
+                  text: 'UBS 06',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: ' - DF-075, Km 180',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+            textHeightBehavior:
+            TextHeightBehavior(applyHeightToFirstAscent: false),
+            softWrap: false,
+          ),
+          Text(
+            'EPNB - Brasília - DF, 71705-510',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 12,
-              color: Color(0xff000000),
-              letterSpacing: 0.108,
-              height: 2,
+              fontSize: 8,
+              color: Color(0x99000000),
+              letterSpacing: 0.054,
+              height: 2.83,
             ),
-            children: [
-              TextSpan(
-                text: 'UPA II',
-                style: TextStyle(
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              TextSpan(
-                text: ' - DF-075, Km 180',
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ],
+            textHeightBehavior:
+            TextHeightBehavior(applyHeightToFirstAscent: false),
+            softWrap: false,
           ),
-          textHeightBehavior:
-          TextHeightBehavior(applyHeightToFirstAscent: false),
-          softWrap: false,
-        ),
-        Text(
-          'EPNB - Brasília - DF, 71705-510',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontSize: 8,
-            color: Color(0x99000000),
-            letterSpacing: 0.054,
-            height: 2.83,
-          ),
-          textHeightBehavior:
-          TextHeightBehavior(applyHeightToFirstAscent: false),
-          softWrap: false,
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
@@ -109,9 +114,12 @@ class _Actions extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(right: 16.0),
-            child: Icon(
-              Icons.notifications,
-              color: AppColors.backgroundColor,
+            child: InkWell(
+              onTap: (() {Navigator.pushNamed(context, 'notifications');}),
+              child: Icon(
+                Icons.notifications,
+                color: AppColors.backgroundColor,
+              ),
             ),
           ),
           InkWell(

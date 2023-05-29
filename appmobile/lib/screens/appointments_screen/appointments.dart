@@ -26,7 +26,7 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> {
         centerTitle: false,
         toolbarHeight: 80,
         automaticallyImplyLeading: false,
-        leading: AppColors.backButton,
+        leading: AppColors().backButtonWithAction(() => Navigator.pushReplacementNamed(context, 'home')),
         title: Text(
           'Suas Consultas',
           style: AppColors.titleTextStyle,
@@ -182,7 +182,7 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> {
           height: 50,
           child: ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, 'forms');
+              Navigator.pushNamed(context, 'agendar_consulta');
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xff00509f),
