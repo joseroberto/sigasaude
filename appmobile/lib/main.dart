@@ -7,6 +7,7 @@ import 'package:covid_data_app/screens/articles_screen/articles.dart';
 import 'package:covid_data_app/screens/auth_screen/auth_screen.dart';
 import 'package:covid_data_app/screens/auth_screen/login_screen.dart';
 import 'package:covid_data_app/screens/auth_screen/register_screen.dart';
+import 'package:covid_data_app/screens/auth_screen/splash_screen.dart';
 import 'package:covid_data_app/screens/emergency_screen/emergency.dart';
 import 'package:covid_data_app/screens/faq_screen/faq.dart';
 import 'package:covid_data_app/screens/forms_screen/forms.dart';
