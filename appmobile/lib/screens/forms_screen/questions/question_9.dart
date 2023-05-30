@@ -29,7 +29,7 @@ class _Question9State extends State<Question9> {
               'Apresentou algum destes\napós o período de\ninfeção da covid-19?',
               style: TextStyle(
                 fontFamily: 'Poppins',
-                fontSize: 24,
+                fontSize: 18,
                 color: Color(0xff000000),
                 letterSpacing: 0.216,
                 height: 1.5,

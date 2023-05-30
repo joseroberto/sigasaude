@@ -36,7 +36,7 @@ class _Question7State extends State<Question7> {
               'Quando diagnosticado por\ncovid-19 teve sintomas no\nperíodo?',
               style: TextStyle(
                 fontFamily: 'Poppins',
-                fontSize: 24,
+                fontSize: 18,
                 color: Color(0xff000000),
                 letterSpacing: 0.216,
                 height: 1.5,

@@ -51,7 +51,7 @@ class _PortraitScreenState extends State<_PortraitScreen> {
             'A confirmação da doença\nse deu por meio de testes\nlaboratoriais?',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 24,
+              fontSize: 18,
               color: Color(0xff000000),
               letterSpacing: 0.216,
               height: 1.5,
@@ -151,7 +151,7 @@ class _LandscapeScreenState extends State<_LandscapeScreen> {
                     'A confirmação da doença se deu por meio de testes\nlaboratoriais?',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: 24,
+                      fontSize: 18,
                       color: Color(0xff000000),
                       letterSpacing: 0.216,
                       height: 1.5,

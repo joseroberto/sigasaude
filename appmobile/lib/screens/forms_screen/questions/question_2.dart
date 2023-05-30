@@ -51,7 +51,7 @@ class _PortraitScreenState extends State<_PortraitScreen> {
             'Você teve covid-19 de 2020\naté hoje?',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 24,
+              fontSize: 18,
               color: Color(0xff000000),
               letterSpacing: 0.216,
               height: 1.5,
@@ -132,7 +132,7 @@ class _LandscapeScreenState extends State<_LandscapeScreen> {
                 'Você teve covid-19 de 2020\naté hoje?',
                 style: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 24,
+                  fontSize: 18,
                   color: Color(0xff000000),
                   letterSpacing: 0.216,
                   height: 1.5,

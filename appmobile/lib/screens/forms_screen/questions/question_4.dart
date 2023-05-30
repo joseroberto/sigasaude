@@ -223,7 +223,7 @@ class _EstabelecimentosState extends State<_Estabelecimentos> {
             'Quais estabelecimentos?',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 24,
+              fontSize: 18,
               color: Color(0xff000000),
               letterSpacing: 0.216,
               height: 1.5,
@@ -239,7 +239,7 @@ class _EstabelecimentosState extends State<_Estabelecimentos> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      CheckBoxOption(option: 'Hostpital'),
+                      CheckBoxOption(option: 'Hospital'),
                       CheckBoxOption(option: 'Unidade Básica de Saúde (UBS)'),
                       CheckBoxOption(option: 'UPA'),
                     ],

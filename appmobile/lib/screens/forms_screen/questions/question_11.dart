@@ -48,10 +48,10 @@ class _PortraitScreenState extends State<_PortraitScreen> {
         const Padding(
           padding: EdgeInsets.only(left: 16.0, bottom: 24, top: 0),
           child: Text(
-            'Gostaria de agendar uma\nconsulta na sua Unidade\nde Saúde?',
+            'Deseja  confirmar a consulta na sua Unidade\nde Saúde?',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 24,
+              fontSize: 18,
               color: Color(0xff000000),
               letterSpacing: 0.216,
               height: 1.5,
@@ -130,7 +130,7 @@ class _LandscapeScreenState extends State<_LandscapeScreen> {
                 'Gostaria de agendar uma\nconsulta na sua Unidade\nde Saúde?',
                 style: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 24,
+                  fontSize: 18,
                   color: Color(0xff000000),
                   letterSpacing: 0.216,
                   height: 1.5,

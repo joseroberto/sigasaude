@@ -48,7 +48,7 @@ class _PortraitScreenState extends State<_PortraitScreen> {
             'Quando recebeu alguma\ndas doses de vacina para\ncovid-19 neste ano?',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 24,
+              fontSize: 18,
               color: Color(0xff000000),
               letterSpacing: 0.216,
               height: 1.5,
@@ -148,7 +148,7 @@ class _LandscapeScreenState extends State<_LandscapeScreen> {
                 'Quando recebeu alguma das doses de vacina para\ncovid-19 neste ano?',
                 style: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 24,
+                  fontSize: 18,
                   color: Color(0xff000000),
                   letterSpacing: 0.216,
                   height: 1.5,

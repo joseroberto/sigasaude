@@ -32,7 +32,7 @@ class _Question8State extends State<Question8> {
             (screenMode == Orientation.landscape) ?  'Observou alguma alteração na sua saúde após ter sido\ndiagnosticado com covid-19' : 'Observou alguma alteração\nna sua saúde após ter sido\ndiagnosticado com\ncovid-19',
             style: const TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 24,
+              fontSize: 18,
               color: Color(0xff000000),
               letterSpacing: 0.216,
               height: 1.5,
