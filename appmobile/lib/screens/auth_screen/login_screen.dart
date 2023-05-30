@@ -162,7 +162,7 @@ class _LandscapeScreen extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, 'home');
+                            Navigator.pushReplacementNamed(context, 'splash');
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xff00509f),
@@ -383,7 +383,7 @@ class _PortraitScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, 'home');
+                        Navigator.pushReplacementNamed(context, 'splash');
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xff00509f),
