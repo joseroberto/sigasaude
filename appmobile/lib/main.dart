@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'SIGA Saúde',
       theme: themeData,
-      initialRoute: "home",
+      initialRoute: "on_boarding",
       routes: {
         "on_boarding": (context) => const OnBoardingScreen(),
         "auth": (context) => const AuthScreen(),
