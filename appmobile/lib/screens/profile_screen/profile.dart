@@ -94,7 +94,7 @@ class ProfileScreen extends StatelessWidget {
                 const Divider(),
                 Padding(
                   padding: const EdgeInsets.only(top: 24.0),
-                  child: _ListItem(function: (() {Navigator.pushReplacementNamed(context, 'login');}), icon: Icons.logout_outlined, title: 'Sair'),
+                  child: _ListItem(function: (() {Navigator.pushReplacementNamed(context, 'on_boarding');}), icon: Icons.logout_outlined, title: 'Sair'),
                 ),
               ],
             ),
